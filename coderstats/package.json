@@ -1,0 +1,11 @@
+{
+  "name": "coderstats",
+  "fullName": "CoderStats link for GitHub Coders",
+  "id": "jid1-HAA0sgdoxNv9aA",
+  "description": "Display a link to the CoderStats page for the currently displayed GitHub user when browsing github.com.",
+  "author": "CoderStats",
+  "license": "MIT",
+  "version": "0.1",
+  "homepage": "http://coderstats.net/",
+  "icon64": "static/logo-64x64.png"
+}
