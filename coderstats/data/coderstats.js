@@ -1,8 +1,8 @@
-var path = document.location.pathname,
+let path = document.location.pathname,
     details,
     login,
     url;
-
+    
 if (m = path.match(/^\/([\w-]+)\??.*?/)) {
     login = m[1].trim();
     if (-1 === ['timeline', 'languages', 'blog', 'explore'].indexOf(login)) {
@@ -16,10 +16,7 @@ if (m = path.match(/^\/([\w-]+)\??.*?/)) {
 
 
 function addLink() {
-    let cslink = document.getElementById('coderstats');
-    if (cslink) return;
-
-    var li = document.createElement('li');
+    let li = document.createElement('li');
     li.setAttribute('id', 'coderstats');
     li.setAttribute('class', 'vcard-detail pt-1');
     li.setAttribute('itemprop', 'url');
