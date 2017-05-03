@@ -2,7 +2,7 @@ let path = document.location.pathname,
     details,
     login,
     url;
-    
+
 if (m = path.match(/^\/([\w-]+)\??.*?/)) {
     login = m[1].trim();
     if (-1 === ['timeline', 'languages', 'blog', 'explore'].indexOf(login)) {
