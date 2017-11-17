@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+  "version": "2.0.0",
+  "homepage_url": "http://coderstats.net/",
+  "name": "CoderStats link for Github Coders",
+  "description": "Display a link to the CoderStats page for the currently displayed GitHub user when browsing github.com.",
+  "icons": {
+    "48": "static/logo-48x48.png",
+    "128": "static/logo-128x128.png"
+  },
+  "content_scripts": [{
+    "matches": ["https://github.com/*"],
+    "js": ["coderstats.js"],
+    "run_at": "document_end"
+  }],
+  "applications": {
+    "gecko": {
+      "id": "jid1-HAA0sgdoxNv9aA@jetpack",
+      "strict_min_version": "48.0"
+    }
+  }
+}
